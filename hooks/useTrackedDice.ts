@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useAccount, usePublicClient, useWriteContract } from "wagmi";
 import { decodeEventLog, encodePacked, keccak256, type Hex } from "viem";
@@ -12,14 +12,23 @@ export type PlayedEventResult = {
   win: boolean;
 };
 
-export const BUILDER_CODE_PLACEHOLDER = "BUILDER_CODE_PLACEHOLDER";
+export const BUILDER_CODE = "bc_2d6ubdlm";
 const APP_ID = "app-008";
 const APP_NAME = "LuckyBlock Dice";
 
-const DATA_SUFFIX = Attribution.toDataSuffix({
+const DATA_SUFFIX =
+  "0x62635f3264367562646c6d0b0080218021802180218021802180218021" as Hex;
+const DATA_SUFFIX_FROM_CODE = Attribution.toDataSuffix({
   // 这里替换为真实 Builder Code
-  codes: [BUILDER_CODE_PLACEHOLDER],
+  codes: [BUILDER_CODE],
 }) as Hex;
+
+if (
+  process.env.NODE_ENV !== "production" &&
+  DATA_SUFFIX_FROM_CODE.toLowerCase() !== DATA_SUFFIX.toLowerCase()
+) {
+  console.warn("Builder code dataSuffix mismatch with provided encoded string.");
+}
 
 export function useTrackedDice() {
   const { address } = useAccount();
