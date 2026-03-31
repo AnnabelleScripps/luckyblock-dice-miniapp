@@ -1,0 +1,12 @@
+# LuckyBlock Dice
+
+Base Mini App with onchain commit + reveal dice interaction and score tracking.
+
+## Placeholders
+
+- `LUCKYBLOCKDICESECURE_CONTRACT_ADDRESS_PLACEHOLDER`
+- `BASE_APP_ID_PLACEHOLDER`
+- `TALENT_VERIFICATION_PLACEHOLDER`
+- `BUILDER_CODE_PLACEHOLDER`
+- `GITHUB_TOKEN_PLACEHOLDER`
+- `VERCEL_TOKEN_PLACEHOLDER`

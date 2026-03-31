@@ -1,0 +1,30 @@
+{
+  "name": "luckyblock-dice",
+  "version": "1.0.0",
+  "description": "LuckyBlock Dice Base Mini App",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@tanstack/react-query": "^5.95.2",
+    "next": "^16.2.1",
+    "ox": "^0.14.10",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "viem": "^2.47.6",
+    "wagmi": "^3.6.0"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "typescript": "^6.0.2"
+  }
+}
