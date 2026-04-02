@@ -30,6 +30,17 @@ if (
   console.warn("Builder code dataSuffix mismatch with provided encoded string.");
 }
 
+const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+
+async function trackWithRetry(userAddress: string, txHash: string) {
+  const maxAttempts = 5;
+  for (let attempt = 0; attempt < maxAttempts; attempt += 1) {
+    const ok = await trackTransaction(APP_ID, APP_NAME, userAddress, txHash);
+    if (ok) return;
+    await delay((attempt + 1) * 1500);
+  }
+}
+
 export function useTrackedDice() {
   const { address } = useAccount();
   const publicClient = usePublicClient();
@@ -47,7 +58,10 @@ export function useTrackedDice() {
       dataSuffix: DATA_SUFFIX,
     });
 
-    void trackTransaction(APP_ID, APP_NAME, address, txHash);
+    if (publicClient) {
+      await publicClient.waitForTransactionReceipt({ hash: txHash });
+    }
+    void trackWithRetry(address, txHash);
     return txHash;
   };
 
@@ -66,10 +80,13 @@ export function useTrackedDice() {
       dataSuffix: DATA_SUFFIX,
     });
 
-    void trackTransaction(APP_ID, APP_NAME, address, txHash);
-
-    if (!publicClient) return { txHash };
+    if (!publicClient) {
+      void trackWithRetry(address, txHash);
+      return { txHash };
+    }
     const receipt = await publicClient.waitForTransactionReceipt({ hash: txHash });
+    void trackWithRetry(address, txHash);
+
     for (const log of receipt.logs) {
       try {
         const parsed = decodeEventLog({

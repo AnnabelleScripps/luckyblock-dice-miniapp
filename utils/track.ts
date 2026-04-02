@@ -5,9 +5,9 @@ export async function trackTransaction(
   appName: string,
   userAddress: string | undefined,
   txHash: string
-) {
+): Promise<boolean> {
   try {
-    await fetch(DASHBOARD_API, {
+    const response = await fetch(DASHBOARD_API, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
@@ -18,5 +18,7 @@ export async function trackTransaction(
         timestamp: new Date().toISOString(),
       }),
     });
+    return response.ok;
   } catch {}
+  return false;
 }
