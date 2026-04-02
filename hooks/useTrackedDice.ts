@@ -13,7 +13,7 @@ export type PlayedEventResult = {
 };
 
 export const BUILDER_CODE = "bc_2d6ubdlm";
-const APP_ID = "app-008";
+const APP_ID = "69cb2672a7654b8774320f18";
 const APP_NAME = "LuckyBlock Dice";
 
 const DATA_SUFFIX =

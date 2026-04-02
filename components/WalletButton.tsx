@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useAccount, useConnect, useDisconnect } from "wagmi";
 
@@ -11,7 +11,8 @@ export function WalletButton() {
   const { connect, connectors, isPending } = useConnect();
   const { disconnect } = useDisconnect();
 
-  const injectedConnector = connectors[0];
+  const preferredConnector =
+    connectors.find((connector) => connector.id === "injected") ?? connectors[0];
 
   if (isConnected && address) {
     return (
@@ -24,8 +25,8 @@ export function WalletButton() {
   return (
     <button
       className="btn-soft"
-      onClick={() => connect({ connector: injectedConnector })}
-      disabled={isPending || !injectedConnector}
+      onClick={() => connect({ connector: preferredConnector })}
+      disabled={isPending || !preferredConnector}
     >
       {isPending ? "Connecting..." : "Connect Wallet"}
     </button>
