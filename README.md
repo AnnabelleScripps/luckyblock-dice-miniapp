@@ -96,3 +96,11 @@ Review the build output and resolve any configuration issues before deployment.
 The app is designed around a commit-and-reveal pattern.
 
 In this model, a commitment is made first.
+
+The result is revealed later in a separate step.
+
+This helps structure the dice interaction in a way that is appropriate for onchain execution.
+
+## Score Tracking
+
+LuckyBlock Dice includes score tracking as part of the gameplay experience.
