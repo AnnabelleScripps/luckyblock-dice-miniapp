@@ -50,3 +50,12 @@ If the project uses another package manager, use the matching install command fo
 ## Configuration
 
 Before running the app, replace the placeholder values with the correct project-specific settings.
+
+The original placeholder values include:
+
+- `LUCKYBLOCKDICESECURE_CONTRACT_ADDRESS_PLACEHOLDER`
+- `BASE_APP_ID_PLACEHOLDER`
+- `TALENT_VERIFICATION_PLACEHOLDER`
+- `BUILDER_CODE_PLACEHOLDER`
+
+Use environment variables or your deployment platform鈥檚 configuration settings to provide these values.
