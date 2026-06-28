@@ -89,3 +89,10 @@ Review the build output and resolve any configuration issues before deployment.
 3. Commit the dice action onchain.
 4. Complete the reveal step when prompted.
 5. View the resulting dice outcome.
+6. Check the updated score tracking display.
+
+## Commit-and-Reveal Flow
+
+The app is designed around a commit-and-reveal pattern.
+
+In this model, a commitment is made first.
