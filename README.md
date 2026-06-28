@@ -36,3 +36,11 @@ Clone the repository from GitHub:
 Then move into the project directory:
 
 `cd luckyblock-dice-miniapp`
+
+## Setup
+
+Install project dependencies using the package manager used by the repository.
+
+For example, if the project uses npm:
+
+`npm install`
