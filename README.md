@@ -142,3 +142,11 @@ If scores do not update, review the score tracking logic and any related onchain
 Contributions should keep the project focused on LuckyBlock Dice and its Base Mini App experience.
 
 Before submitting changes, test the main dice flow and score tracking behavior.
+
+Keep documentation updated when setup steps, configuration values, or usage details change.
+
+## License
+
+No license information was provided in the original project description.
+
+Add a license file if one is intended for this repository.
