@@ -44,3 +44,9 @@ Install project dependencies using the package manager used by the repository.
 For example, if the project uses npm:
 
 `npm install`
+
+If the project uses another package manager, use the matching install command for the lockfile included in the repository.
+
+## Configuration
+
+Before running the app, replace the placeholder values with the correct project-specific settings.
