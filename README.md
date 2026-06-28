@@ -13,3 +13,11 @@ The project centers on a commit-and-reveal flow, where a dice interaction is sub
 It also includes score tracking so play results can be recorded and displayed by the app.
 
 ## Features
+
+- Base Mini App structure.
+- Onchain commit-and-reveal dice interaction.
+- Score tracking for dice results.
+- Configuration placeholders for deployment-specific values.
+- A focused project scope suitable for a small interactive app.
+
+## Project Goals
