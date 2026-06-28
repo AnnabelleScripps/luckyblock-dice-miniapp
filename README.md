@@ -1,12 +1,7 @@
 # LuckyBlock Dice
 
-Base Mini App with onchain commit + reveal dice interaction and score tracking.
+LuckyBlock Dice is a Base Mini App for an onchain commit-and-reveal dice interaction with score tracking.
 
-## Placeholders
+Repository: https://github.com/AnnabelleScripps/luckyblock-dice-miniapp.git
 
-- `LUCKYBLOCKDICESECURE_CONTRACT_ADDRESS_PLACEHOLDER`
-- `BASE_APP_ID_PLACEHOLDER`
-- `TALENT_VERIFICATION_PLACEHOLDER`
-- `BUILDER_CODE_PLACEHOLDER`
-- `GITHUB_TOKEN_PLACEHOLDER`
-- `VERCEL_TOKEN_PLACEHOLDER`
+## Overview
