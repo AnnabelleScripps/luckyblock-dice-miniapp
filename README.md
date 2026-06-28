@@ -126,3 +126,11 @@ Check that the Base Mini App settings match the deployed app URL.
 Run a production build locally when possible before deploying.
 
 Review the deployed version after release to confirm that the dice flow works end to end.
+
+## Troubleshooting
+
+If the app does not start, confirm that dependencies were installed successfully.
+
+If configuration errors appear, check that all required placeholder values have been replaced.
+
+If the dice interaction fails, verify the configured contract address.
