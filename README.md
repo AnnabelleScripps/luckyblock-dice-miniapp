@@ -59,3 +59,9 @@ The original placeholder values include:
 - `BUILDER_CODE_PLACEHOLDER`
 
 Use environment variables or your deployment platform鈥檚 configuration settings to provide these values.
+
+Do not hard-code sensitive or deployment-specific values directly into source files.
+
+## Running Locally
+
+After installing dependencies and configuring required values, start the local development server.
