@@ -120,3 +120,9 @@ Confirm that score tracking updates correctly after each completed dice interact
 ## Deployment Notes
 
 Configure all required deployment values before publishing the app.
+
+Check that the Base Mini App settings match the deployed app URL.
+
+Run a production build locally when possible before deploying.
+
+Review the deployed version after release to confirm that the dice flow works end to end.
