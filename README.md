@@ -28,3 +28,11 @@ It also includes score tracking so play results can be recorded and displayed by
 - Provide a clean foundation for continued development.
 
 ## Repository
+
+Clone the repository from GitHub:
+
+`git clone https://github.com/AnnabelleScripps/luckyblock-dice-miniapp.git`
+
+Then move into the project directory:
+
+`cd luckyblock-dice-miniapp`
