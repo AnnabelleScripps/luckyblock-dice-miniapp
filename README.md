@@ -65,3 +65,11 @@ Do not hard-code sensitive or deployment-specific values directly into source fi
 ## Running Locally
 
 After installing dependencies and configuring required values, start the local development server.
+
+If the project uses npm, the command may be:
+
+`npm run dev`
+
+Then open the local URL shown in your terminal.
+
+## Building
