@@ -104,3 +104,11 @@ This helps structure the dice interaction in a way that is appropriate for oncha
 ## Score Tracking
 
 LuckyBlock Dice includes score tracking as part of the gameplay experience.
+
+Scores can be used to show recent outcomes, progress, or related game state depending on the implementation.
+
+## Development Notes
+
+Keep configuration values outside the committed source whenever possible.
+
+Verify that contract addresses and app identifiers match the intended environment.
