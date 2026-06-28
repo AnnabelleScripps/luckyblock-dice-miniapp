@@ -21,3 +21,10 @@ It also includes score tracking so play results can be recorded and displayed by
 - A focused project scope suitable for a small interactive app.
 
 ## Project Goals
+
+- Keep the dice interaction transparent.
+- Separate app configuration from source code.
+- Support a simple user experience around rolling and tracking results.
+- Provide a clean foundation for continued development.
+
+## Repository
