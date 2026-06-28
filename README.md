@@ -134,3 +134,11 @@ If the app does not start, confirm that dependencies were installed successfully
 If configuration errors appear, check that all required placeholder values have been replaced.
 
 If the dice interaction fails, verify the configured contract address.
+
+If scores do not update, review the score tracking logic and any related onchain reads or writes.
+
+## Contributing
+
+Contributions should keep the project focused on LuckyBlock Dice and its Base Mini App experience.
+
+Before submitting changes, test the main dice flow and score tracking behavior.
