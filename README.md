@@ -112,3 +112,11 @@ Scores can be used to show recent outcomes, progress, or related game state depe
 Keep configuration values outside the committed source whenever possible.
 
 Verify that contract addresses and app identifiers match the intended environment.
+
+Test the full commit-and-reveal flow before publishing changes.
+
+Confirm that score tracking updates correctly after each completed dice interaction.
+
+## Deployment Notes
+
+Configure all required deployment values before publishing the app.
