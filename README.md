@@ -73,3 +73,11 @@ If the project uses npm, the command may be:
 Then open the local URL shown in your terminal.
 
 ## Building
+
+To create a production build, use the build command defined in the project scripts.
+
+If the project uses npm, the command may be:
+
+`npm run build`
+
+Review the build output and resolve any configuration issues before deployment.
