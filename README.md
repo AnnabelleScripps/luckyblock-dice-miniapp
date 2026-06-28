@@ -81,3 +81,11 @@ If the project uses npm, the command may be:
 `npm run build`
 
 Review the build output and resolve any configuration issues before deployment.
+
+## Usage
+
+1. Open the LuckyBlock Dice Mini App.
+2. Start a dice interaction.
+3. Commit the dice action onchain.
+4. Complete the reveal step when prompted.
+5. View the resulting dice outcome.
